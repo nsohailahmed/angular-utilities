@@ -53,6 +53,19 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Miles</label>
+      <input class="form-control" type="number" (input)="onMilesChange($event)">
+    </div>
+    <div class="col">
+      <label for=""><b>Mile in KM</b></label>
+      <div>
+        {{miles | mileToKmPipe:'m'}} 
+      </div>
+    </div>
+  </div>
  
 
 </div>
